@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	day0 "github.com/jibaru/advent-of-code-2025/day_0"
+	day1 "github.com/jibaru/advent-of-code-2025/day_1"
 )
 
 func main() {
@@ -19,6 +20,8 @@ func main() {
 	switch *day {
 	case 0:
 		answer, err = day0.Solve(*part, *isTest)
+	case 1:
+		answer, err = day1.Solve(*part, *isTest)
 	default:
 		err = fmt.Errorf("day not allowed")
 	}
